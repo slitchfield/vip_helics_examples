@@ -1,5 +1,5 @@
 {
-  "name": "Battery",
+  "name": "fedA",
   "core_type": "zmq",
   "log_level": "debug",
   "period": 60,
@@ -9,31 +9,31 @@
   "publications": [
     {
       "global": true,
-      "key": "Battery/EV1_current",
+      "key": "fedA/EV1_current",
       "type": "double",
       "unit": "A"
     },
     {
       "global": true,
-      "key": "Battery/EV2_current",
+      "key": "fedA/EV2_current",
       "type": "double",
       "unit": "A"
     },
     {
       "global": true,
-      "key": "Battery/EV3_current",
+      "key": "fedA/EV3_current",
       "type": "double",
       "unit": "A"
     },
     {
       "global": true,
-      "key": "Battery/EV4_current",
+      "key": "fedA/EV4_current",
       "type": "double",
       "unit": "A"
     },
     {
       "global": true,
-      "key": "Battery/EV5_current",
+      "key": "fedA/EV5_current",
       "type": "double",
       "unit": "A"
     }
@@ -41,31 +41,31 @@
   "subscriptions": [
     {
       "global": true,
-      "key": "Charger/EV1_voltage",
+      "key": "fedB/EV1_voltage",
       "type": "double",
       "unit": "V"
     },
     {
       "global": true,
-      "key": "Charger/EV2_voltage",
+      "key": "fedB/EV2_voltage",
       "type": "double",
       "unit": "V"
     },
     {
       "global": true,
-      "key": "Charger/EV3_voltage",
+      "key": "fedB/EV3_voltage",
       "type": "double",
       "unit": "V"
     },
     {
       "global": true,
-      "key": "Charger/EV4_voltage",
+      "key": "fedB/EV4_voltage",
       "type": "double",
       "unit": "V"
     },
     {
       "global": true,
-      "key": "Charger/EV5_voltage",
+      "key": "fedB/EV5_voltage",
       "type": "double",
       "unit": "V"
     }

@@ -4,15 +4,15 @@
   "federates": [
     {
       "directory": ".",
-      "exec": "python -u Battery.py 1",
+      "exec": "python -u fedA.py 1",
       "host": "localhost",
-      "name": "Battery"
+      "name": "fedA"
     },
     {
       "directory": ".",
-      "exec": "python -u Charger.py 1",
+      "exec": "python -u fedB.py 1",
       "host": "localhost",
-      "name": "Charger"
+      "name": "fedB"
     }
   ]
 }

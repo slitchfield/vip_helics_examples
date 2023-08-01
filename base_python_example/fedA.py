@@ -20,7 +20,7 @@ def destroy_federate(fed):
 def main(argv):
     np.random.seed(628)
 
-    fed = h.helicsCreateValueFederateFromConfig("ChargerConfig.json")
+    fed = h.helicsCreateValueFederateFromConfig("fedAConfig.json")
     federate_name = h.helicsFederateGetName(fed)
     logger.info(f"Created federate {federate_name}")
 
