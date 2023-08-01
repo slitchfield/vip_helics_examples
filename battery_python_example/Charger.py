@@ -17,10 +17,38 @@ def destroy_federate(fed):
     logger.info("Federate Finalized")
 
 
+def calc_charging_voltage(EV_list):
+    charging_voltage = []
+    charge_voltages = [120, 240, 630]
+    for EV in EV_list:
+        if EV == 1:
+            charging_voltage.append(charge_voltages[0])
+        elif EV == 2:
+            charging_voltage.append(charge_voltages[1])
+        elif EV == 3:
+            charging_voltage.append(charge_voltages[2])
+        else:
+            charging_voltage.append(0)
+
+    return charging_voltage
+
+
+def get_new_EV(numEVs):
+    lvl1 = 0.05
+    lvl2 = 0.6
+    lvl3 = 0.35
+    listOfEVs = np.random.choice([1, 2, 3], numEVs, p=[lvl1, lvl2, lvl3]).tolist()
+    numLvl1 = listOfEVs.count(1)
+    numLvl2 = listOfEVs.count(2)
+    numLvl3 = listOfEVS.count(3)
+
+    return numLvl1, numLvl2, numLvl3, listOfEVs
+
+
 def main(argv):
     np.random.seed(628)
 
-    fed = h.helicsCreateValueFederateFromConfig("BatteryConfig.json")
+    fed = h.helicsCreateValueFederateFromConfig("ChargerConfig.json")
     federate_name = h.helicsFederateGetName(fed)
     logger.info(f"Created federate {federate_name}")
 

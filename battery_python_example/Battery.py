@@ -17,6 +17,16 @@ def destroy_federate(fed):
     logger.info("Federate Finalized")
 
 
+def get_new_battery(numBattery):
+    sm = 0.2
+    med = 0.2
+    lg = 0.6
+
+    listOfBatts = np.random.choice([25, 62, 100], numBattery, p=[sm, med, lg]).tolist()
+
+    return listOfBatts
+
+
 def main(argv):
     np.random.seed(628)
 
